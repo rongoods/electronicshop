@@ -77,7 +77,7 @@ const Footer = () => {
                     letterSpacing: '1px'
                 }}>
                     <div>© 2025 ANTIGRAVITY. ALL RIGHTS RESERVED.</div>
-                    <div style={{ display: 'flex', gap: 'var(--spacing-md)', justifyContent: 'center', marginTop: '10px' }}>
+                    <div className="footer-bottom-links">
                         <Link to="/privacy">Privacy Policy</Link>
                         <Link to="/terms">Terms of Service</Link>
                     </div>

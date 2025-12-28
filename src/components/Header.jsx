@@ -25,12 +25,7 @@ const Header = () => {
                 </Link>
 
                 <nav className="header-nav">
-                    <ul style={{
-                        fontSize: '14px',
-                        fontWeight: 400,
-                        textTransform: 'uppercase',
-                        letterSpacing: '2.8px'
-                    }}>
+                    <ul>
                         <li><Link to="/smartphones">{t('nav.smartphones')}</Link></li>
                         <li><Link to="/audio">{t('nav.audio')}</Link></li>
                         <li><Link to="/accessories">{t('nav.accessories')}</Link></li>
@@ -38,7 +33,7 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                <div className="header-actions" style={{ display: 'flex', gap: 'var(--spacing-md)', fontSize: '14px', letterSpacing: '2.8px', alignItems: 'center' }}>
+                <div className="header-actions">
                     <button
                         onClick={() => setLanguage(language === 'en' ? 'de' : 'en')}
                         style={{
