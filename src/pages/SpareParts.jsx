@@ -33,8 +33,9 @@ const SpareParts = () => {
                 {/* Filter System */}
                 <div style={{
                     display: 'flex',
-                    gap: '15px',
-                    marginBottom: 'var(--spacing-xl)'
+                    gap: '10px',
+                    marginBottom: 'var(--spacing-lg)',
+                    flexWrap: 'wrap'
                 }}>
                     {models.map(model => (
                         <button
@@ -42,11 +43,11 @@ const SpareParts = () => {
                             id={`filter-${model.toLowerCase().replace(' ', '-')}`}
                             onClick={() => setActiveModel(model)}
                             style={{
-                                fontSize: '14px',
+                                fontSize: '12px',
                                 fontWeight: activeModel === model ? 700 : 400,
                                 textTransform: 'uppercase',
                                 letterSpacing: '2px',
-                                padding: '10px 25px',
+                                padding: '10px 20px',
                                 border: '1.5px solid #000',
                                 backgroundColor: activeModel === model ? '#000' : 'var(--color-bg)',
                                 color: activeModel === model ? '#FFF' : '#000',
@@ -59,11 +60,7 @@ const SpareParts = () => {
                 </div>
 
                 {/* Parts Grid */}
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(4, 1fr)',
-                    gap: '20px'
-                }}>
+                <div className="grid-responsive">
                     {filteredParts.map(part => (
                         <div key={part.id} className="fade-in" style={{
                             border: '1.5px solid var(--color-black)',

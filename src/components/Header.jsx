@@ -14,11 +14,7 @@ const Header = () => {
             backgroundColor: 'var(--color-bg)',
             zIndex: 1000
         }}>
-            <div className="container" style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center'
-            }}>
+            <div className="container header-container">
                 <Link to="/" style={{
                     fontSize: '1.2rem',
                     fontWeight: 700,
@@ -28,10 +24,8 @@ const Header = () => {
                     ANTIGRAVITY
                 </Link>
 
-                <nav>
+                <nav className="header-nav">
                     <ul style={{
-                        display: 'flex',
-                        gap: 'var(--spacing-md)',
                         fontSize: '14px',
                         fontWeight: 400,
                         textTransform: 'uppercase',
@@ -44,7 +38,7 @@ const Header = () => {
                     </ul>
                 </nav>
 
-                <div style={{ display: 'flex', gap: 'var(--spacing-md)', fontSize: '14px', letterSpacing: '2.8px', alignItems: 'center' }}>
+                <div className="header-actions" style={{ display: 'flex', gap: 'var(--spacing-md)', fontSize: '14px', letterSpacing: '2.8px', alignItems: 'center' }}>
                     <button
                         onClick={() => setLanguage(language === 'en' ? 'de' : 'en')}
                         style={{

@@ -15,10 +15,10 @@ const Checkout = () => {
 
     return (
         <main className="fade-in" style={{ backgroundColor: 'var(--color-bg)' }}>
-            <div className="container" style={{ padding: 'var(--spacing-lg) 0' }}>
+            <div className="container" style={{ padding: 'var(--spacing-md) 0' }}>
                 <h1 style={{ fontSize: '2.5rem', marginBottom: 'var(--spacing-lg)' }}>{t('checkout.title')}</h1>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1.5fr 1fr', gap: '30px', alignItems: 'start' }}>
+                <div className="hero-container">
                     {/* Guest Checkout Form */}
                     <div style={{ backgroundColor: 'var(--color-white)', border: '1.5px solid #000', padding: '30px' }}>
                         <h2 style={{ fontSize: '1.2rem', marginBottom: '20px' }}>{t('checkout.shipping')}</h2>

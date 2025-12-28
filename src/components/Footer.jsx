@@ -14,10 +14,7 @@ const Footer = () => {
             textAlign: 'center'
         }}>
             <div className="container">
-                <div style={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(4, 1fr)',
-                    gap: 'var(--spacing-lg)',
+                <div className="grid-responsive" style={{
                     marginBottom: 'var(--spacing-xl)',
                     textAlign: 'left'
                 }}>

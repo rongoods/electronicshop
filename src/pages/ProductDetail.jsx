@@ -11,8 +11,8 @@ const ProductDetail = () => {
     return (
         <main className="fade-in" style={{ backgroundColor: 'var(--color-bg)' }}>
             {/* Product Hero Section */}
-            <section style={{ padding: 'var(--spacing-lg) 0' }}>
-                <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px', alignItems: 'start' }}>
+            <section style={{ padding: 'var(--spacing-md) 0' }}>
+                <div className="container hero-container">
                     {/* Image Gallery */}
                     <div style={{
                         backgroundColor: 'var(--color-white)',
@@ -56,17 +56,19 @@ const ProductDetail = () => {
             </section>
 
             {/* Sustainability Widget */}
-            <section style={{ padding: 'var(--spacing-lg) 0' }}>
+            <section style={{ padding: 'var(--spacing-md) 0' }}>
                 <div className="container">
-                    <div style={{
+                    <div className="sustainability-widget" style={{
                         display: 'flex',
                         justifyContent: 'space-between',
                         alignItems: 'center',
                         backgroundColor: 'var(--color-white)',
                         border: '1.5px solid #000',
-                        padding: '30px'
+                        padding: '30px',
+                        flexWrap: 'wrap',
+                        gap: '20px'
                     }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-md)' }}>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--spacing-md)', flex: '1 1 300px' }}>
                             <div style={{
                                 width: '80px',
                                 height: '80px',
@@ -75,7 +77,8 @@ const ProductDetail = () => {
                                 alignItems: 'center',
                                 justifyContent: 'center',
                                 fontSize: '1.5rem',
-                                fontWeight: 700
+                                fontWeight: 700,
+                                flexShrink: 0
                             }}>
                                 9.3
                             </div>
@@ -84,7 +87,7 @@ const ProductDetail = () => {
                                 <p style={{ fontSize: '13px', color: '#666' }}>Standard-setting modular design.</p>
                             </div>
                         </div>
-                        <div style={{ display: 'flex', gap: 'var(--spacing-lg)' }}>
+                        <div style={{ display: 'flex', gap: 'var(--spacing-lg)', flex: '1 1 300px', justifyContent: 'center' }}>
                             <div style={{ textAlign: 'center' }}>
                                 <h4 style={{ fontSize: '1.2rem' }}>100%</h4>
                                 <p style={{ fontSize: '12px', color: '#666', textTransform: 'uppercase' }}>Fair Cobalt</p>
@@ -126,10 +129,10 @@ const ProductDetail = () => {
             </section>
 
             {/* Cross-Selling */}
-            <section style={{ padding: 'var(--spacing-xl) 0' }}>
+            <section style={{ padding: 'var(--spacing-lg) 0' }}>
                 <div className="container">
                     <h2 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-lg)', textTransform: 'uppercase' }}>{t('pdp.addons')}</h2>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '20px' }}>
+                    <div className="grid-responsive">
                         <div style={{ textAlign: 'center', border: '1.5px solid #000', backgroundColor: 'var(--color-white)', padding: '5px' }}>
                             <img src={catAccessories} style={{ width: '100%', marginBottom: '10px' }} alt="Protective Case" />
                             <h4 style={{ fontSize: '12px', fontWeight: 400 }}>Protective Case</h4>

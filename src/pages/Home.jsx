@@ -15,18 +15,13 @@ const Home = () => {
         <main style={{ backgroundColor: 'var(--color-bg)' }}>
             {/* Hero Section */}
             <section style={{
-                height: '80vh',
+                minHeight: '80vh',
                 display: 'flex',
                 alignItems: 'center',
-                padding: 'var(--spacing-xl) 0',
+                padding: 'var(--spacing-lg) 0',
                 backgroundColor: 'var(--color-bg)'
             }}>
-                <div className="container" style={{
-                    display: 'grid',
-                    gridTemplateColumns: '1fr 1fr',
-                    alignItems: 'center',
-                    gap: 'var(--spacing-lg)'
-                }}>
+                <div className="container hero-container">
                     <div className="fade-in">
                         <h1 style={{ fontSize: '3.5rem', lineHeight: '1.1', marginBottom: 'var(--spacing-md)', fontWeight: 700 }}>
                             {t('home.heroTitle')}
@@ -49,11 +44,7 @@ const Home = () => {
             {/* Category Grid Section */}
             <section style={{ padding: 'var(--spacing-lg) 0' }}>
                 <div className="container">
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(4, 1fr)',
-                        gap: '20px'
-                    }}>
+                    <div className="grid-responsive">
                         <ProductCard
                             id="galaxy-1"
                             image={heroPhone}
@@ -95,12 +86,12 @@ const Home = () => {
                     <p style={{ fontSize: '14px', color: '#000', marginBottom: 'var(--spacing-md)', letterSpacing: '0.5px' }}>
                         {t('home.longevityDesc')}
                     </p>
-                    <div style={{ display: 'flex', justifyContent: 'center', gap: '20px' }}>
-                        <div style={{ padding: 'var(--spacing-md)', border: '1.5px solid #000', backgroundColor: 'var(--color-white)', flex: 1, textAlign: 'center' }}>
+                    <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
+                        <div style={{ padding: 'var(--spacing-md)', border: '1.5px solid #000', backgroundColor: 'var(--color-white)', flex: '1 1 300px', textAlign: 'center' }}>
                             <h3 style={{ fontSize: '2rem', marginBottom: '5px' }}>9.3</h3>
                             <p style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>{t('home.repairScore')}</p>
                         </div>
-                        <div style={{ padding: 'var(--spacing-md)', border: '1.5px solid #000', backgroundColor: 'var(--color-white)', flex: 1, textAlign: 'center' }}>
+                        <div style={{ padding: 'var(--spacing-md)', border: '1.5px solid #000', backgroundColor: 'var(--color-white)', flex: '1 1 300px', textAlign: 'center' }}>
                             <h3 style={{ fontSize: '2rem', marginBottom: '5px' }}>100%</h3>
                             <p style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>{t('home.recycled')}</p>
                         </div>
