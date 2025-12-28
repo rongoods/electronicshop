@@ -39,7 +39,7 @@ const Checkout = () => {
                             <h2 style={{ fontSize: '1.2rem', marginBottom: '20px' }}>{t('checkout.summary')}</h2>
                             <div style={{ display: 'grid', gap: '10px', fontSize: '13px' }}>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid #EEE', paddingBottom: '10px' }}>
-                                    <span>Antigravity Phone 1</span>
+                                    <span>electronics Phone 1</span>
                                     <span>$599.00</span>
                                 </div>
                                 <div style={{ display: 'flex', justifyContent: 'space-between' }}>

@@ -13,11 +13,11 @@ export const translations = {
             cart: 'CART'
         },
         home: {
-            heroTitle: 'Antigravity Phone 1.',
+            heroTitle: 'electronics Phone 1.',
             heroSubtitle: 'The iconic modular smartphone reimagined. Designed for longevity. Built for impact.',
             explore: 'Explore Collection',
             longevityTitle: 'Longevity by Design.',
-            longevityDesc: 'We believe the most sustainable tech is the tech you keep. Antigravity devices are 100% modular and repairable.',
+            longevityDesc: 'We believe the most sustainable tech is the tech you keep. electronics devices are 100% modular and repairable.',
             repairScore: 'Repair Score',
             recycled: 'Recycled'
         },
@@ -48,7 +48,7 @@ export const translations = {
         },
         repairHub: {
             title: 'Repair Hub',
-            subtitle: 'Antigravity devices are designed to be opened. Explore guides, tools, and spare parts.',
+            subtitle: 'electronics devices are designed to be opened. Explore guides, tools, and spare parts.',
             tutorials: 'Popular Tutorials',
             help: 'Professional Help',
             helpDesc: 'Not comfortable doing it yourself? Find an authorized repair shop near you.',
@@ -62,7 +62,7 @@ export const translations = {
             access: 'Early Access',
             accessDesc: 'Members get first access to limited edition spare parts and modules.',
             bonus: 'Trade-in Bonus',
-            bonusDesc: 'Get 20% more credit when you trade in your old Antigravity device.',
+            bonusDesc: 'Get 20% more credit when you trade in your old electronics device.',
             joinTitle: 'Join the Movement',
             joinDesc: 'Sign up today and start earning rewards for keeping your tech alive.',
             joinBtn: 'Join For Free'
@@ -78,11 +78,11 @@ export const translations = {
             cart: 'WARENKORB'
         },
         home: {
-            heroTitle: 'Antigravity Phone 1.',
+            heroTitle: 'electronics Phone 1.',
             heroSubtitle: 'Das ikonische modulare Smartphone neu gedacht. Entworfen für Langlebigkeit. Gebaut für Wirkung.',
             explore: 'Kollektion Erkunden',
             longevityTitle: 'Langlebigkeit durch Design.',
-            longevityDesc: 'Wir glauben, dass die nachhaltigste Technik die ist, die man behält. Antigravity-Geräte sind zu 100 % modular und reparierbar.',
+            longevityDesc: 'Wir glauben, dass die nachhaltigste Technik die ist, die man behält. electronics-Geräte sind zu 100 % modular und reparierbar.',
             repairScore: 'Reparatur-Score',
             recycled: 'Recycelt'
         },
@@ -113,7 +113,7 @@ export const translations = {
         },
         repairHub: {
             title: 'Reparatur-Hub',
-            subtitle: 'Antigravity-Geräte sind so konzipiert, dass sie geöffnet werden können. Entdecken Sie Anleitungen, Werkzeuge und Ersatzteile.',
+            subtitle: 'electronics-Geräte sind so konzipiert, dass sie geöffnet werden können. Entdecken Sie Anleitungen, Werkzeuge und Ersatzteile.',
             tutorials: 'Beliebte Tutorials',
             help: 'Professionelle Hilfe',
             helpDesc: 'Sie fühlen sich nicht wohl dabei, es selbst zu tun? Finden Sie eine autorisierte Werkstatt in Ihrer Nähe.',
@@ -127,7 +127,7 @@ export const translations = {
             access: 'Früher Zugang',
             accessDesc: 'Mitglieder erhalten zuerst Zugang zu limitierten Ersatzteilen und Modulen.',
             bonus: 'Inzahlungnahme-Bonus',
-            bonusDesc: 'Erhalten Sie 20 % mehr Gutschrift, wenn Sie Ihr altes Antigravity-Gerät eintauschen.',
+            bonusDesc: 'Erhalten Sie 20 % mehr Gutschrift, wenn Sie Ihr altes electronics-Gerät eintauschen.',
             joinTitle: 'Werden Sie Teil der Bewegung',
             joinDesc: 'Melden Sie sich noch heute an und fangen Sie an, Belohnungen dafür zu sammeln, dass Sie Ihre Technik am Leben erhalten.',
             joinBtn: 'Kostenlos Beitreten'

@@ -76,7 +76,7 @@ const Footer = () => {
                     color: '#666',
                     letterSpacing: '1px'
                 }}>
-                    <div>© 2025 ANTIGRAVITY. ALL RIGHTS RESERVED.</div>
+                    <div>© 2025 electronics. ALL RIGHTS RESERVED.</div>
                     <div className="footer-bottom-links">
                         <Link to="/privacy">Privacy Policy</Link>
                         <Link to="/terms">Terms of Service</Link>

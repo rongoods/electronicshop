@@ -23,7 +23,7 @@ const Header = () => {
                     letterSpacing: '0.1em',
                     textTransform: 'uppercase'
                 }}>
-                    ANTIGRAVITY
+                    electronics
                 </Link>
 
                 <nav className="header-nav">

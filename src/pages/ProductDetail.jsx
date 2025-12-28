@@ -23,15 +23,15 @@ const ProductDetail = () => {
                         border: '1.5px solid var(--color-border)',
                         padding: '20px'
                     }}>
-                        <img src={heroPhone} alt="Antigravity Phone 1" style={{ width: '80%' }} />
+                        <img src={heroPhone} alt="electronics Phone 1" style={{ width: '80%' }} />
                     </div>
 
                     {/* Product Info */}
                     <div style={{ padding: '20px', backgroundColor: 'var(--color-white)', border: '1.5px solid var(--color-border)' }}>
                         <nav style={{ fontSize: '11px', color: '#666', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px' }}>
-                            {t('nav.smartphones')} / Antigravity Phone 1
+                            {t('nav.smartphones')} / electronics Phone 1
                         </nav>
-                        <h1 style={{ fontSize: '2.5rem', marginBottom: '10px' }}>Antigravity Phone 1</h1>
+                        <h1 style={{ fontSize: '2.5rem', marginBottom: '10px' }}>electronics Phone 1</h1>
                         <p style={{ fontSize: '1.5rem', fontWeight: 400, marginBottom: '30px' }}>$599.00</p>
 
                         <div style={{ marginBottom: '20px' }}>
@@ -113,7 +113,7 @@ const ProductDetail = () => {
                             </tr>
                             <tr>
                                 <th>Processor</th>
-                                <td>Antigravity A1 Neural Engine</td>
+                                <td>electronics A1 Neural Engine</td>
                             </tr>
                             <tr>
                                 <th>Camera</th>
