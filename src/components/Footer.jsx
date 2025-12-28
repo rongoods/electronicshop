@@ -50,7 +50,7 @@ const Footer = () => {
 
                     <div style={{ textAlign: 'left' }}>
                         <h4 style={{ marginBottom: 'var(--spacing-sm)', fontSize: '12px', textTransform: 'uppercase', letterSpacing: '2px' }}>{t('footer.newsletter')}</h4>
-                        <div style={{ display: 'flex', borderBottom: '1.5px solid var(--color-black)', paddingBottom: '4px', maxWidth: '300px' }}>
+                        <div style={{ display: 'flex', borderBottom: '1.5px solid var(--color-border)', paddingBottom: '4px', maxWidth: '300px' }}>
                             <input
                                 type="email"
                                 placeholder="Enter your email"

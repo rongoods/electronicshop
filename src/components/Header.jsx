@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 
 const Header = () => {
     const { language, setLanguage, t } = useLanguage();
+    const { currentTheme, setCurrentTheme, themes } = useTheme();
 
     return (
         <header style={{
@@ -34,14 +36,35 @@ const Header = () => {
                 </nav>
 
                 <div className="header-actions">
+                    <div style={{ display: 'flex', gap: '8px', alignItems: 'center', marginRight: '10px' }}>
+                        {Object.entries(themes).map(([key, theme]) => (
+                            <button
+                                key={key}
+                                onClick={() => setCurrentTheme(key)}
+                                title={theme.name}
+                                style={{
+                                    width: '14px',
+                                    height: '14px',
+                                    borderRadius: '50%',
+                                    backgroundColor: theme.primary,
+                                    border: `1.5px solid ${currentTheme === key ? 'var(--color-black)' : 'transparent'}`,
+                                    padding: 0,
+                                    cursor: 'pointer',
+                                    boxShadow: currentTheme === key ? '0 0 0 1px var(--color-bg)' : 'none'
+                                }}
+                            />
+                        ))}
+                    </div>
                     <button
                         onClick={() => setLanguage(language === 'en' ? 'de' : 'en')}
                         style={{
                             fontWeight: 700,
                             padding: '4px 8px',
-                            border: '1.5px solid #000',
+                            border: '1.5px solid var(--color-border)',
                             fontSize: '11px',
-                            cursor: 'pointer'
+                            cursor: 'pointer',
+                            backgroundColor: 'transparent',
+                            color: 'var(--color-black)'
                         }}
                     >
                         {language === 'en' ? 'DE' : 'EN'}

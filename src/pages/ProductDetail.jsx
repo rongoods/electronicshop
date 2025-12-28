@@ -20,14 +20,14 @@ const ProductDetail = () => {
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
-                        border: '1.5px solid #000',
+                        border: '1.5px solid var(--color-border)',
                         padding: '20px'
                     }}>
                         <img src={heroPhone} alt="Antigravity Phone 1" style={{ width: '80%' }} />
                     </div>
 
                     {/* Product Info */}
-                    <div style={{ padding: '20px', backgroundColor: 'var(--color-white)', border: '1.5px solid #000' }}>
+                    <div style={{ padding: '20px', backgroundColor: 'var(--color-white)', border: '1.5px solid var(--color-border)' }}>
                         <nav style={{ fontSize: '11px', color: '#666', marginBottom: '20px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                             {t('nav.smartphones')} / Antigravity Phone 1
                         </nav>
@@ -37,8 +37,8 @@ const ProductDetail = () => {
                         <div style={{ marginBottom: '20px' }}>
                             <h4 style={{ fontSize: '12px', marginBottom: '10px', textTransform: 'uppercase', letterSpacing: '2px' }}>Color: Matte Black</h4>
                             <div style={{ display: 'flex', gap: '10px' }}>
-                                <div style={{ width: '30px', height: '30px', backgroundColor: '#000', border: '1.5px solid #000' }}></div>
-                                <div style={{ width: '30px', height: '30px', backgroundColor: '#F5F5F5', border: '1.5px solid #000' }}></div>
+                                <div style={{ width: '30px', height: '30px', backgroundColor: 'var(--color-black)', border: '1.5px solid var(--color-border)' }}></div>
+                                <div style={{ width: '30px', height: '30px', backgroundColor: 'var(--color-bg)', border: '1.5px solid var(--color-border)' }}></div>
                             </div>
                         </div>
 
@@ -63,7 +63,7 @@ const ProductDetail = () => {
                         justifyContent: 'space-between',
                         alignItems: 'center',
                         backgroundColor: 'var(--color-white)',
-                        border: '1.5px solid #000',
+                        border: '1.5px solid var(--color-border)',
                         padding: '30px',
                         flexWrap: 'wrap',
                         gap: '20px'
@@ -72,7 +72,7 @@ const ProductDetail = () => {
                             <div style={{
                                 width: '80px',
                                 height: '80px',
-                                border: '1.5px solid #000',
+                                border: '1.5px solid var(--color-border)',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
@@ -103,7 +103,7 @@ const ProductDetail = () => {
 
             {/* Technical Specifications */}
             <section style={{ padding: 'var(--spacing-xl) 0' }}>
-                <div className="container" style={{ backgroundColor: 'var(--color-white)', border: '1.5px solid #000', padding: '40px' }}>
+                <div className="container" style={{ backgroundColor: 'var(--color-white)', border: '1.5px solid var(--color-border)', padding: '40px' }}>
                     <h2 style={{ fontSize: '2rem', marginBottom: 'var(--spacing-lg)' }}>{t('pdp.specs')}</h2>
                     <table>
                         <tbody>
@@ -133,12 +133,12 @@ const ProductDetail = () => {
                 <div className="container">
                     <h2 style={{ fontSize: '1.5rem', marginBottom: 'var(--spacing-lg)', textTransform: 'uppercase' }}>{t('pdp.addons')}</h2>
                     <div className="grid-responsive">
-                        <div style={{ textAlign: 'center', border: '1.5px solid #000', backgroundColor: 'var(--color-white)', padding: '5px' }}>
+                        <div style={{ textAlign: 'center', border: '1.5px solid var(--color-border)', backgroundColor: 'var(--color-white)', padding: '5px' }}>
                             <img src={catAccessories} style={{ width: '100%', marginBottom: '10px' }} alt="Protective Case" />
                             <h4 style={{ fontSize: '12px', fontWeight: 400 }}>Protective Case</h4>
                             <p style={{ fontSize: '13px', marginTop: '5px' }}>$29.00</p>
                         </div>
-                        <div style={{ textAlign: 'center', border: '1.5px solid #000', backgroundColor: 'var(--color-white)', padding: '5px' }}>
+                        <div style={{ textAlign: 'center', border: '1.5px solid var(--color-border)', backgroundColor: 'var(--color-white)', padding: '5px' }}>
                             <img src={catParts} style={{ width: '100%', marginBottom: '10px' }} alt="Spare Battery" />
                             <h4 style={{ fontSize: '12px', fontWeight: 400 }}>Spare Battery</h4>
                             <p style={{ fontSize: '13px', marginTop: '5px' }}>$29.00</p>

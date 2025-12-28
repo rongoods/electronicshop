@@ -26,7 +26,7 @@ const Home = () => {
                         <h1 style={{ fontSize: '3.5rem', lineHeight: '1.1', marginBottom: 'var(--spacing-md)', fontWeight: 700 }}>
                             {t('home.heroTitle')}
                         </h1>
-                        <p style={{ fontSize: '15px', marginBottom: 'var(--spacing-md)', maxWidth: '400px', color: '#000', letterSpacing: '0.5px' }}>
+                        <p style={{ fontSize: '15px', marginBottom: 'var(--spacing-md)', maxWidth: '400px', color: 'var(--color-black)', letterSpacing: '0.5px' }}>
                             {t('home.heroSubtitle')}
                         </p>
                         <Button>{t('home.explore')}</Button>
@@ -77,21 +77,21 @@ const Home = () => {
             <section style={{
                 padding: 'var(--spacing-xl) 0',
                 backgroundColor: 'var(--color-white)',
-                borderTop: '1.5px solid #000',
-                borderBottom: '1.5px solid #000',
+                borderTop: '1.5px solid var(--color-border)',
+                borderBottom: '1.5px solid var(--color-border)',
                 textAlign: 'center'
             }}>
                 <div className="container" style={{ maxWidth: '800px' }}>
                     <h2 style={{ fontSize: '2.5rem', marginBottom: 'var(--spacing-sm)' }}>{t('home.longevityTitle')}</h2>
-                    <p style={{ fontSize: '14px', color: '#000', marginBottom: 'var(--spacing-md)', letterSpacing: '0.5px' }}>
+                    <p style={{ fontSize: '14px', color: 'var(--color-black)', marginBottom: 'var(--spacing-md)', letterSpacing: '0.5px' }}>
                         {t('home.longevityDesc')}
                     </p>
                     <div style={{ display: 'flex', justifyContent: 'center', gap: '20px', flexWrap: 'wrap' }}>
-                        <div style={{ padding: 'var(--spacing-md)', border: '1.5px solid #000', backgroundColor: 'var(--color-white)', flex: '1 1 300px', textAlign: 'center' }}>
+                        <div style={{ padding: 'var(--spacing-md)', border: '1.5px solid var(--color-border)', backgroundColor: 'var(--color-white)', flex: '1 1 300px', textAlign: 'center' }}>
                             <h3 style={{ fontSize: '2rem', marginBottom: '5px' }}>9.3</h3>
                             <p style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>{t('home.repairScore')}</p>
                         </div>
-                        <div style={{ padding: 'var(--spacing-md)', border: '1.5px solid #000', backgroundColor: 'var(--color-white)', flex: '1 1 300px', textAlign: 'center' }}>
+                        <div style={{ padding: 'var(--spacing-md)', border: '1.5px solid var(--color-border)', backgroundColor: 'var(--color-white)', flex: '1 1 300px', textAlign: 'center' }}>
                             <h3 style={{ fontSize: '2rem', marginBottom: '5px' }}>100%</h3>
                             <p style={{ fontSize: '12px', textTransform: 'uppercase', letterSpacing: '1px' }}>{t('home.recycled')}</p>
                         </div>
